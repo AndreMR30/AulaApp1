@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpcoesActivity"
+    android:background="@drawable/bg_app" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="148dp"
+        android:text="Bem Vindo"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
+        android:text="Escolha uma das Opções:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastrarNovoUsuario"
+        style="@style/btn"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bg_botao"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Cadastrar Novo Usuário"
+        android:textColor="#B1CD4C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastrarNovoImovel"
+        style="@style/btn"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bg_botao"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Cadastrar Novo Imóvel"
+        android:textColor="#B1CD4C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCadastrarNovoUsuario" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConUsuario"
+        style="@style/btn"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bg_botao"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Consultar Usuário"
+        android:textColor="#B1CD4C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCadastrarNovoImovel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConImovel"
+        style="@style/btn"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bg_botao"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Consultar Imovel"
+        android:textColor="#B1CD4C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnConUsuario" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConComissao"
+        style="@style/btn"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/bg_botao"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Consultar Comissão"
+        android:textColor="#B1CD4C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnConImovel" />
+
+    <TextView
+        android:id="@+id/txtSair"
+        android:layout_width="88dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="60dp"
+        android:text="Sair"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConComissao" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

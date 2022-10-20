@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadImovelActivity"
+    android:background="@drawable/bg_app">
+
+    <TextView
+        android:id="@+id/txtTituloCadImovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="49dp"
+        android:text="Cadastro de Imóvel"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtProprietario"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite o Proprietário..."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloCadImovel" />
+
+    <EditText
+        android:id="@+id/edtTelefone1"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite o Telefone 1..."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtProprietario" />
+
+    <EditText
+        android:id="@+id/edtTelefone2"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite o Telefone 2..."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtTelefone1" />
+
+    <EditText
+        android:id="@+id/edtCondominio"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite o Condomínio..."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtTelefone2" />
+
+    <EditText
+        android:id="@+id/edtEndereco"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite o Endereco..."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtCondominio" />
+
+    <EditText
+        android:id="@+id/edtData"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite a Data..."
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEndereco" />
+
+    <EditText
+        android:id="@+id/edtValor"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite o Valor..."
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtData" />
+
+    <EditText
+        android:id="@+id/edtObservacao"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite as Observações..."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtValor" />
+
+    <EditText
+        android:id="@+id/edtStatusAluguel"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Alugad ou não"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtObservacao" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastrarNovoImovel"
+        style="@style/btn"
+        android:background="@drawable/bg_botao"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Cadastrar"
+        android:textColor="#B1CD4C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAgenciador" />
+
+    <ImageButton
+        android:id="@+id/imageHomeButton"
+        style="@style/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_icon"
+        android:longClickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarNovoImovel"
+        app:srcCompat="@drawable/home" />
+
+    <EditText
+        android:id="@+id/edtAgenciador"
+        style="@style/camposMenor"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_campos"
+        android:ems="10"
+        android:hint="Digite as Observações..."
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtStatusAluguel"
+     />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
